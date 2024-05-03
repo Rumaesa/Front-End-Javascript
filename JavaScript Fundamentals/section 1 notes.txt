@@ -1,0 +1,177 @@
+String comparison :
+java: == | javascript: ===
+
+printing in console:
+java: system.out.println(); | javascript: console.log();
+
+variable declaration: 
+java: int a = 10; | js: let a = 10;
+
+--------------------------
+
+Variables and Values: 
+
+* variable - box.
+* we can only use: _ , $ , numbers(not at start) , letters.
+* cannot use reserve keyword. (only "name" can be used). if want to use then we can use $ at start.
+* variables in all caps are reserved for constant values.
+
+------------------------
+
+Data type:
+
+* value can be either object or primitive value.
+
+* primitive: 
+1. number (includes int and float both)
+2. String
+3. Boolean
+4. Undefined: value taken by a variable that is not yet defined ('empty value') : let children;
+5. Null: 'empty value'.
+6. Symbol: value that is unique and cannot be changed (ES2015)
+7. BigInt: larger int than the number type can hold. (ES2020)
+
+* js has dynamic typing. we dont define type. it defines automatically.
+
+* comment : // , /* .. */
+
+* typeof : method to check variable type.
+e.g: console.log(typeof true); -> boolean
+console.log(typeof javascriptIsFun); -> check variable.
+console.log(typeof 'firstName'); -> string
+console.log(typeof null) -> object.
+
+
+* let year; ->it holds value "undefine" till we assign value to it.
+
+--------------------
+ways of declaring variables:
+
+1. let (modern) : can reassign values. can define empty var.
+2. const (modern) : for constant values (that cannot be changed). immutable variables. required initial value.
+3. var (old) : pre ES6. can change values. blocked scope.
+4. can directly use variable (terrible idea).
+
+-------------------------
+Basic Operators:
+
+* allows us to transform and combine values. 
+
+1. mathematical : + , - , * , ** (power) , / , concatenate : + 
+
+2. typeof : 
+
+3. Assignment operator:
+ = : to assign value.
+ += : x +=10; -> x = x + 10;
+ *= : 
+ /= : 
+ ++ : x = x + 1;
+ -- : 
+ 
+ 4. comparison operator : produces boolean value.
+ > (greater), <(less than), >= , <= 
+ 
+ operator precedence
+ 
+ ----------------------------
+ Strings and Template Literals:
+ 
+ template literals: used to concatenate string with the variable values.
+ 
+ e.g.:
+ const jonas = `I'm ${firstName}, a ${job}`;
+ 
+ "\n\" creates a new line
+   OR
+   console.log(`Hello
+   I am 
+   Rumaesa`);
+   .. it will also add new line.
+   
+------------------
+Type Conversion and Coercion:
+
+* Type conversion - when we manually convert one type to another.
+ 
+ string to number : Number(inputyear)
+ 
+ when we try to convert string to number and perform mathematical operation then it will give error value as "NaN" which means "Not a number" 
+ type of NaN is number.
+ we can only convert:
+ number to string or boolean 
+ String to number.
+ 
+ 
+ we cannot convert:
+ something to undefined on null.
+ 
+ 
+* Type coercion - when js converts one type to another automatically for us.
+
+it happens when an operator is dealing with 2 values of different types.
+
+------------------------
+
+Truthy and Falsy Values:
+
+Falsy values: values that are not exactly false, but it becomes false when we try to convert them into boolean:
+
+there are 5 falsy values: 0 , '' , undefined , null , NaN
+
+ 
+Truthy values:
+
+
+
+Java script does type coercion to boolean:
+scenario 1: when using logical operator
+scenario 2: in a logical context (conditional statement if, else)
+
+
+---------------------
+equality operator: == vs ===
+
+= -> assignment operator
+=== -> strict equality operator. it is strict bcz it doesnt perfrom type coercion.
+== -> loose equality operator. it does type coersion. (avoid using)
+!== -> strict difference operator
+!= -> loose difference operator. (avoid)
+
+
+
+======
+
+getting a value from a webpage:
+
+prompt(); -> will take input in alert box in as a string type.
+
+----------------------
+Boolean logic: AND, OR, & NOT
+AND -> &&
+OR -> ||
+NOT -> !
+
+------------------------
+SWITCH Statement : 
+switch(day){
+case 'monday':
+	con..
+	break; //impt otherwise it will excute below code also
+case 'tuesday':
+	:
+	break;
+default:
+
+-----------
+Statements and Expressions:
+
+Expression : is a piece of code that produces a value.
+
+statement: it is bigger piece of code that is executed and which does not produces a value on itself. and we can compare this with normal spoken language. (ends with ;)
+
+expression -> produces values
+statements -> fully sentences that translate our actions
+
+--------------------
+The conditional ternary operator:
